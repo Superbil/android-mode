@@ -406,7 +406,9 @@ activity in the 'launcher' category."
 
 (android-defun-ant-task "clean")
 (android-defun-ant-task "debug")
+(android-defun-ant-task "test")
 (android-defun-ant-task "installd")
+(android-defun-ant-task "installt")
 (android-defun-ant-task "uninstall")
 
 (defconst android-mode-keys
@@ -415,7 +417,9 @@ activity in the 'launcher' category."
     ("l" . android-logcat)
     ("C" . android-ant-clean)
     ("c" . android-ant-debug)
+    ("T" . android-ant-test)
     ("i" . android-ant-installd)
+    ("t" . android-ant-installt)
     ("r" . android-ant-reinstall)
     ("u" . android-ant-uninstall)
     ("a" . android-start-app)))
